@@ -2,10 +2,10 @@
 int main(){
     char a,c;
     int b;
-    scanf("%c,%c", &a, &c);
+    scanf("%s,%s", &a, &c);
     scanf("%d",&b);
-    printf("Name: %c\n",a);
+    printf("Name: %s\n",a);
     printf("Age: %d\n", b);
-    printf("Hobby: %c\n", c);
+    printf("Hobby: %s\n", c);
     return 0;
 }
