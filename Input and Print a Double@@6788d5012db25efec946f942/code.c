@@ -1,5 +1,5 @@
 #include<stdio.h>
-float main()
+double main()
 {
     double a;
     scanf("%lf", &a);
