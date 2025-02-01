@@ -2,6 +2,6 @@
 int main(){
     int a;
     scanf("%d", &a);
-    printf("%d", a<<32 & 1);
+    printf("%d", 32-a);
     return 0;
 }
