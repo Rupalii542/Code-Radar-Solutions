@@ -9,6 +9,6 @@ int main(){
     else if(a=='1','2','3','4','5','6','7','8','9','0')
     printf("Digit");
     else
-    printf("Constant");
+    printf("Consonant");
     return 0;
 }
