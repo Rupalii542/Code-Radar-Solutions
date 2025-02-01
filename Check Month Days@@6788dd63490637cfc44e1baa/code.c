@@ -3,6 +3,7 @@ int main()
 {
     int month;
     scanf("%d", &month);
+    switch(month){
     case 1:
     printf("%d", 31);
     break;
@@ -41,5 +42,6 @@ int main()
     break;
     default:
     printf("Invalid month");
+    }
     return 0;
     }
