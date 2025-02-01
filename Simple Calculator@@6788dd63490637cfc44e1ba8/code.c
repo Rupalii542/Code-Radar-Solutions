@@ -4,19 +4,20 @@ int main(){
     char op;
     scanf("%d %d %c", &a, &b, &op);
     switch(op){
-        case (+):
+        case '+':
         printf("%d", a+b);
         break;
-        case(-):
+        case '-':
         printf("%d", a-b);
         break;
-        case(*):
+        case '*':
         printf("%d", a*b);
-        case (/):
+        case '/':
+        if (b!=0)
         printf("%d", a/b);
-        break;
-        default:
+        else
         printf("error");
+    break;
     }
-    return 0;
+        return 0;
     }
