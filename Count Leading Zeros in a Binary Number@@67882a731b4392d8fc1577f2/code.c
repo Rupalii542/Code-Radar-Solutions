@@ -5,6 +5,6 @@ int main(){
     if(a>=1)
     printf("%d", 32-a);
     else
-    printf("%d", 32)
+    printf("%d", 32);
     return 0;
 }
