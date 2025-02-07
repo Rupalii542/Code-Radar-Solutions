@@ -1,10 +1,14 @@
 #include <stdio.h>
 int main(){
-    int a;
+    int a,n;
     scanf("%d", &a);
-    if(a>=1)
-    printf("%d", 32-a);
-    else
-    printf("%d", 32);
+    int count=0;
+    n=1<<31;
+    while ((a&n)==0)
+    {
+        n=n>>1;
+        count++;
+    }
+    printf("%d", count);
     return 0;
 }
