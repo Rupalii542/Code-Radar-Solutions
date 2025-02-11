@@ -6,7 +6,7 @@ int main(){
     scanf("%d",&num);
     scanf("%d",&roll);
     scanf("%s",&name);
-    scanf(".lf",&marks);
-    printf("Roll Number: %d, Name: %s, Marks: %d",roll,name, marks);
+    scanf("%lf",&marks);
+    printf("Roll Number: %d, Name: %s, Marks: %.2lf",roll,name, marks);
     return 0;
 }
