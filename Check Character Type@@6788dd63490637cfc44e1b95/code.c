@@ -10,7 +10,6 @@ int main() {
 }
 */
 #include<stdio.h>
-#include<ctype>
 int main(){
     char ch;
     scanf("%c",&ch);
