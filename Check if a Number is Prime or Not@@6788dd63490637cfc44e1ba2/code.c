@@ -21,20 +21,21 @@ int main(){
 */
 #include<stdio.h>
 int main(){
-    int a,i;
+    int a,i=2;
+    int prime=1;
     scanf("%d",&a);
     if(a<=1){
         printf("Not Prime");
         else{
         while(i<=a/2){
-            int prime=1;
+            //int prime=1;
 if(a%i==0){
     prime=0;
     break;
 }
 i++;
         }
-        if (prime=1)
+        if (prime==1)
 {
     printf("Prime");
 }      
