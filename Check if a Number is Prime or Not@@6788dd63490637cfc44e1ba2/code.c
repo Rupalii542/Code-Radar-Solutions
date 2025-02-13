@@ -1,4 +1,4 @@
-#include<stdio.h>
+/*#include<stdio.h>
 int main(){
     int n, i, flag;
     scanf("%d", &n);
@@ -17,4 +17,29 @@ int main(){
     else
     printf("Not Prime\n");
     return 0;
+}
+*/
+#include<stdio.h>
+int main(){
+    int a,i;
+    scanf("%d",&a);
+    if(a<=1){
+        printf("Not Prime");
+        else{
+        while(i<=a/2){
+            int prime=1;
+if(a%i==0){
+    prime=0;
+    break;
+}
+i++;
+        }
+        if (prime=1)
+{
+    printf("Prime");
+}      
+else{
+    printf("Not Prime");
+}  }
+    }
 }
