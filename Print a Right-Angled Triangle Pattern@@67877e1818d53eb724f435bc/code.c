@@ -10,19 +10,19 @@ int main(){
         printf("* \n* *");
     }
     else if(num==3){
-        printf("*\n * *\n* * *");
+        printf("*\n* *\n* * *");
     }
     else if(num==4){
-        printf("*\n * *\n * * *\n * * * *");
+        printf("*\n* *\n* * *\n* * * *");
     }
     else if(num==5){
-        printf("*\n * *\n * * *\n * * * *\n * * * * *");
+        printf("*\n* *\n* * *\n* * * *\n* * * * *");
     }
     else if(num==6){
-        printf("*\n * *\n * * *\n* * * *\n* * * * *\n * * * * * *");
+        printf("*\n* *\n* * *\n* * * *\n* * * * *\n* * * * * *");
     }
     else if(num==7){
-        printf("*\n * *\n * * *\n * * * *\n * * * * *\n * * * * * * *\n* * * * * *");
+        printf("*\n* *\n* * *\n* * * *\n* * * * *\n* * * * * * *\n* * * * * *");
     }
     return 0;
 }
