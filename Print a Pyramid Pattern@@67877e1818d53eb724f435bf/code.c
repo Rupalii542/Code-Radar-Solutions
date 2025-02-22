@@ -11,6 +11,7 @@ int main(){
             printf("*");
         }
         z+=2;
+        printf("\n");
     }
     return 0;
 }
