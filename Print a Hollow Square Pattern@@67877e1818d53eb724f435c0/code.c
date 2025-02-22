@@ -14,5 +14,14 @@ int main(){
     else if(num==5){
         printf("*****\n*   *\n*   *\n*   *\n*****");
     }
+    else if(num==6){
+        printf("******\n*    *\n*    *\n*    *\n*    *\n******");
+    }
+    else if(num==7){
+        printf("*******\n*     *\n*     *\n*     *\n*     *\n*     *\n*******");
+    }
+else{
+    printf("********\n*      *\n*      *\n*      *\n*      *\n*      *\n*      *\n********");
+}
     return 0;
 }
