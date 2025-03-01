@@ -2,11 +2,12 @@
 
 int main() {
     char inputChar;
-    scanf("%c", &Ch);
+    // printf("Enter an uppercase letter: ");
+    scanf("%c", &inputChar);
 
-    for (char i = 'A'; i <= Ch; i++) {
+    for (char i = 'A'; i <= inputChar; i++) {
         for (char j = 'A'; j <= i; j++) {
-            printf("%c ", j);
+            printf("%d ", j);  // Print the ASCII value
         }
         printf("\n");
     }
