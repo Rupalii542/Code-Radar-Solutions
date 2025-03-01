@@ -3,10 +3,10 @@ int main(){
     int num;
     char ch;
     scanf("%d",&num);
-    for (int i=0;i<num;i++){
+    for (int i=1;i<=num;i++){
         ch='A';
-        for(int j=0; j<i; j++){
-            printf("%c",ch);
+        for(int j=1; j<=i; j++){
+            printf("%c ", ch);
             ch++;
         }
         printf("\n");
