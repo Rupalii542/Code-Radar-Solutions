@@ -17,7 +17,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     for(int i=0;i<size; i++){
-        if(prime(i)){
+        if(prime(int i)){
             pritnf("%d",count);
         }
     }
