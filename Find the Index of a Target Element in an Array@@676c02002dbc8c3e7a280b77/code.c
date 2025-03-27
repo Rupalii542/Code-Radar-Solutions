@@ -1,20 +1,24 @@
 #include<stdio.h>
-int check(int arr[i],int target){
-    for(int i=0; i<size; i++){
-        if(arr[i]==target){
-            printf("%d", i);
+
+int check(int arr[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == target) {
+            return i; 
         }
     }
-    printf("-1");
+    return -1; 
 }
-int main(){
+int main() {
     int size;
-    scanf("%d",&size);
+    scanf("%d", &size);
     int arr[size];
-    for(int i=0; i<size; i++){
-        scanf("%d",&arr[i]);
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
     }
     int target;
-    scanf("%d",&target);
-    // printf("%d",check(arr[i],target));
+    scanf("%d", &target);
+    
+    int result = check(arr, size, target);
+    printf("%d\n", result);
+    return 0;
 }
