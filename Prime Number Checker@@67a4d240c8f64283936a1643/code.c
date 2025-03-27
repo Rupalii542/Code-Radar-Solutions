@@ -1,15 +1,14 @@
 #include<stdio.h>
 int prime(int num){
-    int input;
+    if(num<2){
+        return 0;
+    }
 for(int i=0; i<input; i++){
     if(num%i==0){
-        return 1;
-    }
-    else{
         return 0;
     }
 }
-return 0;
+return 1;
 }
 int main(){
 int input;
@@ -19,7 +18,7 @@ for(int i=0; i<input; i++){
 scanf("%d", &num);
 }
 for(int i=0; i<input; i++){
-    if(prime(i)){
+    if(prime(num)){
         printf("1 ");
     }
     else{
