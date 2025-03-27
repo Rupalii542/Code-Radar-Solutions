@@ -1,4 +1,12 @@
 #include<stdio.h>
+int check(int arr[i],int target){
+    for(int i=0; i<size; i++){
+        if(arr[i]==target){
+            printf("%d", i);
+        }
+    }
+    printf("-1");
+}
 int main(){
     int size;
     scanf("%d",&size);
@@ -8,13 +16,5 @@ int main(){
     }
     int target;
     scanf("%d",&target);
-    for(int i=0; i<size; i++){
-        if(arr[i]==target){
-            printf("%d", i);
-        }
-    }
-    else
-{
-    printf("-1");
-}
+    // printf("%d",check(arr[i],target));
 }
