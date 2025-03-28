@@ -5,7 +5,7 @@ int insertionSort(int arr[], int n){
             if(arr[c]>arr[c+1]){
                 int temp=arr[c];
                 arr[c]=arr[c+1];
-                arr[c=1]=temp;
+                arr[c+1]=temp;
             }
         }
     }
