@@ -1,5 +1,5 @@
 #include<stdio.h>
-int fibonacci(int n){
+int fibonacciSeries(int n){
     if(n<=0)
     return -1;
 if (n==1)
@@ -13,11 +13,4 @@ a=b;
 b=fib;
 }
 return b;
-}
-int main(){
-    int n;
-    scanf("%d",&n);
-    int result=fibonacci(n);
-    printf("%d",result);
-    return 0;
 }
