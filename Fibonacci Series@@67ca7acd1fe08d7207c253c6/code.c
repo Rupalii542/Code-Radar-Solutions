@@ -8,5 +8,5 @@ void fibonacciSeries(int num) {
         a = b;
         b = c;
     }
-    printf("\n");  
+    // printf("\n");  
 }
