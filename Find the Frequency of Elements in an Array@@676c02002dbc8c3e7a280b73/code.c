@@ -10,7 +10,6 @@ void count(int arr[], int size) {
         }
     }
 }
-
 int main() {
     int size;
     scanf("%d", &size);
