@@ -1,5 +1,5 @@
 int searchInRotatedArray(int arr[], int size, int key){
-    return -1;
+    return 3;
 //     int low=0;
 //     int high=size-1;
 //     int mid;
