@@ -1,5 +1,5 @@
 #include<stdio.h>
-int searchInRotatedArray(int arr[], int n, int key){
+int searchInRotatedArray(int arr[], int size, int key){
     int low=0;
     int high=size-1;
     int mid;
@@ -18,4 +18,4 @@ int searchInRotatedArray(int arr[], int n, int key){
     }
     return -1;
 }
-]
+}
