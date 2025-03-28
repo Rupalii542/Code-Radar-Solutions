@@ -1,5 +1,5 @@
 #include<stdio.h>
-int bubbleSort(int arr, int n){
+void bubbleSort(int arr, int n){
     for(int p=0; p<n-1; p++){
         for(int c=0; c<n-p-1; c++){
             if(arr[c]>arr[c+1]){
@@ -8,6 +8,6 @@ int bubbleSort(int arr, int n){
                 arr[c+1]=temp;
             }
         }
-        return 0;
+        
     }
 }
