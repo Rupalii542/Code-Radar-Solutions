@@ -1,19 +1,18 @@
-#include<stdio.h>
 int searchInRotatedArray(int arr[], int size, int key){
     int low=0;
     int high=size-1;
     int mid;
     while(low<=high){
         mid=(low+high)/2;
-        for(int i=0; i<n; i++){
+        for(int i=0; i<size; i++){
         if(arr[i]==key){
-            printf("%d",i);
+            return mid;
         }
         if(arr[mid]<key){
-            printf("%d",i);
+        low=mid+1;
         }
         else{
-            printf("%d",i);
+        high=mid-1;
         }
     }
     return -1;
