@@ -1,13 +1,12 @@
 #include<stdio.h>
-int prime(int arr[], int size){
-    int count;
-    for(int i=2; i<size; i++){
-        if(i%i==0){
-count ++;
-return count;
+int prime(int num){
+    if(num<2)return 0;
+    for(int i=2; i<num; i++){
+        if(num%i==0){
+            return 0;
         }
     }
-    return 0;
+    return 1;
 }
 int main(){
     int size;
@@ -16,10 +15,13 @@ int main(){
     for(int i=0; i<size; i++){
         scanf("%d", &arr[i]);
     }
-    for(int i=0;i<size; i++){
-        if(prime(int i)){
-            pritnf("%d",count);
+    int count=0;
+    for(int i=0; i<size; i++){
+        if(prime(arr[i])){
+            count++;
+            // printf("%d ", arr[i]);
         }
     }
+    printf("%d ",count);
     return 0;
 }
