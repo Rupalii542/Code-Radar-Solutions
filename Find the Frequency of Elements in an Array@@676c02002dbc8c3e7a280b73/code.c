@@ -1,19 +1,32 @@
 #include <stdio.h>
-void count(int arr[], int size) {
-    int freq[10] = {};
-    for (int i = 0; i < size; i++) freq[arr[i]]++;
+
+void findFrequency(int arr[], int size) {
+    int visited[size]; // Array to mark counted elements
     for (int i = 0; i < size; i++) {
-        if (freq[arr[i]]) {
-            printf("%d %d\n", arr[i], freq[arr[i]]);
-            freq[arr[i]] = 0;
+        visited[i] = 0; // Initialize all as not counted
+    }
+
+    for (int i = 0; i < size; i++) {
+        if (visited[i] == 1) // Skip already counted elements
+            continue;
+
+        int count = 1; // Count occurrences of arr[i]
+        for (int j = i + 1; j < size; j++) {
+            if (arr[i] == arr[j]) {
+                count++;
+                visited[j] = 1; // Mark duplicate as counted
+            }
         }
+
+        printf("%d\n", arr[i], count);
     }
 }
+
 int main() {
-    int size;
-    scanf("%d", &size);
-    int arr[size];
-    for (int i = 0; i < size; i++) scanf("%d", &arr[i]);
-    count(arr, size);
+    int arr[] = {1, 2, 2, 3, 4, 4, 4, 5, 6, 2};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    findFrequency(arr, size);
+
     return 0;
 }
