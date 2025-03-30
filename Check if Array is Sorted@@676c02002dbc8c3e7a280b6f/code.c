@@ -10,6 +10,14 @@ void sort(int arr[], int n){
         }
     }
 }
+int isSorted(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            return 0; 
+        }
+    }
+    return 1; 
+}
 int main(){
     int size;
     scanf("%d",&size);
@@ -17,13 +25,11 @@ int main(){
     for(int i=0; i<size; i++){
 scanf("%d",&arr[i]);
     }
-    for(int i=0; i<size; i++){
-    if(sort(arr,size)){
-        printf("Sorted");
-    }
-    else{
-        printf("Not Sorted");
-    }
+    sort(arr, size);
+    if (isSorted(arr, size)) {
+        printf("Sorted\n");
+    } else {
+        printf("Not Sorted\n");
     }
     return 0;
 }
