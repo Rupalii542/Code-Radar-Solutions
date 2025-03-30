@@ -12,7 +12,7 @@ void sort(int arr[], int n){
 }
 int isSorted(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
-        if (arr[i] > arr[i + 1]) {
+        if (arr[i] >= arr[i + 1]) {
             return 0; 
         }
     }
@@ -25,7 +25,6 @@ int main(){
     for(int i=0; i<size; i++){
 scanf("%d",&arr[i]);
     }
-    sort(arr, size);
     if (isSorted(arr, size)) {
         printf("Sorted\n");
     } else {
