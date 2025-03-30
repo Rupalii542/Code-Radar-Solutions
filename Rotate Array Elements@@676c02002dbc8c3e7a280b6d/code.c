@@ -26,7 +26,7 @@ int main() {
     for (int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
 scanf("%d", &k);
-    rightRotate(arr, n, k);
+    rotation(arr, n, k);
     printArray(arr, n);
     return 0;
 }
