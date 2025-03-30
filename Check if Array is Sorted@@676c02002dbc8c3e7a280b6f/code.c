@@ -1,5 +1,5 @@
 #include<stdio.h>
-int sort(int arr[], int size){
+int sort(int arr[], int n){
     for(int p=0;p<n-1; p++){
         for(int c=0;c<n-p-1;c++){
             if(arr[c]>arr[c+1]){
