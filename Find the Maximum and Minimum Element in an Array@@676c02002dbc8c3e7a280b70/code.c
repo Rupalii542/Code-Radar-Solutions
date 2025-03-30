@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main(){
     int size;
-    scanf("%s",&size);
-    int arr[size];
+    scanf("%d",&size);
+    int arr[];
     for(int i=0; i<size; i++){
         scanf("%d ",&arr[i]);
     }
