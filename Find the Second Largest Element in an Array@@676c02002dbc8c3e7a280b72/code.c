@@ -19,10 +19,10 @@ int main() {
             smax = arr[i];
         }
     }
-    if (smax == INT_MIN) {
-        printf("%d",smax);
-    } else {
+    // if (smax == INT_MIN) {
+    //     printf("%d",smax);
+    // } else {
         printf("%d", smax);
-    }
+    // }
     return 0;
 }
