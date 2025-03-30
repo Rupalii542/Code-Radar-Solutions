@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void count(int arr[], int size) {
     int freq[10] = {};
     for (int i = 0; i < size; i++) freq[arr[i]]++;
