@@ -20,7 +20,8 @@ void printArray(int arr[], int n){
     }
 }
 int main(){
-    int n, int k;
+    int n;
+     int k;
     scanf("%d",&n);
     int arr[n];
     for(int i=0; i<n; i++){
