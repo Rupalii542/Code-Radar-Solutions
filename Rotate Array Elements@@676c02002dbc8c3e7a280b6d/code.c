@@ -40,8 +40,8 @@ while(start<end){
     end--;
 }
 }
-int rotation(int arr[], int num, int k){
-    k=k%num;
+int rotation(int arr[], int n, int k){
+    k=k%n;
     reverse(arr,0,k-1);
     reverse(arr,n-k,n-1);
     reverse(arr,0,n-1);
@@ -57,7 +57,9 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d ",&arr[i]);
     }
+    int k;
+    scanf("%d",&k);
     rotation(arr, n, k);
-    reverse(arr,start,end);
+    printArray(arr,n);
     return 0;
 }
