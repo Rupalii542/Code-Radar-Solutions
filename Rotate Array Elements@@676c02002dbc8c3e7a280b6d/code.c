@@ -31,7 +31,7 @@
 // }
 
 #include<stdio.h>
-int reverse(int arr[], int start, int end){
+void reverse(int arr[], int start, int end){
 while(start<end){
     int temp=arr[start];
     arr[start]=arr[end];
@@ -40,7 +40,7 @@ while(start<end){
     end--;
 }
 }
-int rotation(int arr[], int n, int k){
+void rotation(int arr[], int n, int k){
     k=k%n;
     reverse(arr,0,k-1);
     reverse(arr,n-k,n-1);
@@ -48,7 +48,7 @@ int rotation(int arr[], int n, int k){
 }
 int printArray(int arr[], int n) {
     for (int i = 0; i < n; i++)
-        printf("%d ", arr[i]);
+        printf("%d\n", arr[i]);
 }
 int main(){
     int n;
