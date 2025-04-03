@@ -3,12 +3,12 @@ int main(){
     char ch[20];
     int n;
     int count=0;
-    scanf("%s",&ch);
-    for(int i=0;i<ch[i];i++){
-if(i=='a' ||i=='e'||i=='o'||i=='i'|| i=='u'||i=='A' ||i=='E'||i=='I'||i=='O'|| i=='U' ){
+    scanf("%s",ch);
+    while(ch[i] != '\0'){
+if (ch[i] == 'a' || ch[i] == 'e' || ch[i] == 'i' || ch[i] == 'o' || ch[i] == 'u' ||
+    ch[i] == 'A' || ch[i] == 'E' || ch[i] == 'I' || ch[i] == 'O' || ch[i] == 'U')
 count++;
 }
-    }
 printf("%d",count);
     return 0;
 }
