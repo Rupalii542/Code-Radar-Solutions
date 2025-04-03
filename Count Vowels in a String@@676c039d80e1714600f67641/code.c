@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     char ch[20];
-    int n;
+    int i=0;
     int count=0;
     scanf("%s",ch);
     while(ch[i] != '\0'){
